@@ -1,0 +1,30 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+
+<style>
+               body {
+                  background-image: url(https://envato-shoebox-0.imgix.net/2102/f378-cf84-46c3-9db0-23bc5355eb73/P4160226.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=adc374fbb94a4776677916cfea6a7590);
+                  height: 100%;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  }
+        </style>
+
+<div class="container mb-5">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+        <h1 style="color:Black;font-family:Lucida Calligraphy; font-weight: 900">IndieCuisine</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
+            <h2><font face="times new roman">Click below to Order..!</font></h2>
+            <a href="{% url 'order' %}" class="btn btn-dark">Order Now!</a>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock content %}
